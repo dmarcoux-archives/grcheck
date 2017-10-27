@@ -11,7 +11,7 @@ headers = {"Authorization": "token %s" % auth_token}
 # TODO: Get owner and name from STDIN, then use it in json below
 owner = "dmarcoux"
 name = "grc"
-json = {'query': '{ repository(owner: "facebook", name: "graphql") { releases(last: 1) { nodes { tag { name } } } } }'}
+json = {'query': '{ repository(owner: "%s", name: "%s") { releases(last: 1) { nodes { tag { name } } } } }' % (owner, name)}
 
 r = requests.post(url='https://api.github.com/graphql', json=json, headers=headers)
 # TODO: Check if there's a node before fetching name, otherwise out of range error

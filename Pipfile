@@ -8,7 +8,8 @@ requests = ">=2.18"
 click = ">=6.7"
 
 [dev-packages]
-"flake8" = "*"
+flake8 = "*"
+twine = "*"
 
 [requires]
 python_version = "3.6.3"

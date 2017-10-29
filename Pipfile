@@ -5,9 +5,10 @@ name = "pypi"
 
 [packages]
 requests = ">=2.18"
+click = ">=6.7"
 
 [dev-packages]
-pycodestyle = "*"
+"flake8" = "*"
 
 [requires]
 python_version = "3.6.3"

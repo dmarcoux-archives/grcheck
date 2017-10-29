@@ -13,9 +13,9 @@ from shutil import rmtree
 from setuptools import setup, Command
 
 # Package meta-data.
-NAME = 'grc'
+NAME = 'grcheck'
 DESCRIPTION = 'GitHub Release Checker'
-URL = 'https://github.com/dmarcoux/grc'
+URL = 'https://github.com/dmarcoux/grcheck'
 EMAIL = 'dmarcoux@posteo.de'
 AUTHOR = 'Dany Marcoux'
 
@@ -86,7 +86,7 @@ setup(
     url=URL,
     py_modules=['mypackage'],
     entry_points={
-        'console_scripts': ['grc=grc:cli'],
+        'console_scripts': ['grcheck=grcheck:cli'],
     },
     install_requires=REQUIRED,
     include_package_data=True,

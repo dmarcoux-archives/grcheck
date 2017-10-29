@@ -1,5 +1,5 @@
 ```
-@dmarcoux/grc
+@dmarcoux/grcheck
 
 GitHub Release Checker
 ```

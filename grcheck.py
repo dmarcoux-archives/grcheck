@@ -18,8 +18,8 @@ def validate_repository(ctx, param, value):
 
         return (owner, name)
     except ValueError:
-        raise click.BadParameter('"%s" must be in format owner/name (https://github.com/%s)'
-                                 % (param.name, click.style('dmarcoux/grc', bold=True)))
+        raise click.BadParameter('"%s" must be in format owner/name (example: https://github.com/%s)'
+                                 % (param.name, click.style('dmarcoux/grcheck', bold=True)))
     except requests.exceptions.HTTPError as error:
         if r.status_code == 404:
             raise click.BadParameter('"https://github.com/%s" is not a repository' % value)
